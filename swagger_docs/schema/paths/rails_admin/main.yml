@@ -1,0 +1,249 @@
+---
+paths:
+  "/":
+    get:
+      tags:
+      - rails_admin/main
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+  "/:model_name":
+    post:
+      tags:
+      - rails_admin/main
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+  "/:model_name/new":
+    post:
+      tags:
+      - rails_admin/main
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+  "/:model_name/export":
+    post:
+      tags:
+      - rails_admin/main
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+  "/:model_name/bulk_delete":
+    delete:
+      tags:
+      - rails_admin/main
+      summary: delete summary
+      description: delete description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+  "/:model_name/bulk_action":
+    post:
+      tags:
+      - rails_admin/main
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+  "/:model_name/:id":
+    get:
+      tags:
+      - rails_admin/main
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/:model_name/:id/edit":
+    put:
+      tags:
+      - rails_admin/main
+      summary: put summary
+      description: put description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/:model_name/:id/delete":
+    delete:
+      tags:
+      - rails_admin/main
+      summary: delete summary
+      description: delete description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/:model_name/:id/show_in_app":
+    get:
+      tags:
+      - rails_admin/main
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/main description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Main"
+      deprecated: false
+      parameters:
+      - name: model_name
+        in: path
+        description: model_name
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
