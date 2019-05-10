@@ -22,5 +22,14 @@ module RoutesToSwaggerDocsExample
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    RoutesToSwaggerDocs.configure do |config|
+      config.root_dir_path = "./swagger_docs"
+      config.schema_save_dir_name = "schema"
+      config.doc_save_file_name = "swagger_doc.yml"
+      config.force_update_schema = false
+      config.use_tag_namespace = true
+      config.use_schema_namespace = false
+    end
   end
 end

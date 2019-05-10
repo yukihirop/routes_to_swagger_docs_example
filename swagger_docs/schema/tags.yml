@@ -1,0 +1,37 @@
+---
+tags:
+- name: rails_admin/engine
+  description: rails_admin/engine description
+  externalDocs:
+    description: description
+    url: url
+- name: api/v2/post
+  description: api/v2/post description
+  externalDocs:
+    description: description
+    url: url
+- name: api/v1/post
+  description: api/v1/post description
+  externalDocs:
+    description: description
+    url: url
+- name: api/v1/task
+  description: api/v1/task description
+  externalDocs:
+    description: description
+    url: url
+- name: task
+  description: task description
+  externalDocs:
+    description: description
+    url: url
+- name: user
+  description: user description
+  externalDocs:
+    description: description
+    url: url
+- name: rails_admin/main
+  description: rails_admin/main description
+  externalDocs:
+    description: description
+    url: url

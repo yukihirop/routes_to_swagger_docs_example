@@ -1,0 +1,80 @@
+---
+paths:
+  "/api/v1/tasks":
+    post:
+      tags:
+      - api/v1/task
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v1/task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+  "/api/v1/tasks/new":
+    get:
+      tags:
+      - api/v1/task
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v1/task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+  "/api/v1/tasks/:id/edit":
+    get:
+      tags:
+      - api/v1/task
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v1/task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/api/v1/tasks/:id":
+    delete:
+      tags:
+      - api/v1/task
+      summary: delete summary
+      description: delete description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v1/task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer

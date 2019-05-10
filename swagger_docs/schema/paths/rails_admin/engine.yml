@@ -1,0 +1,18 @@
+---
+paths:
+  "/admin":
+    get:
+      tags:
+      - rails_admin/engine
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: rails_admin/engine description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Engine"
+      deprecated: false

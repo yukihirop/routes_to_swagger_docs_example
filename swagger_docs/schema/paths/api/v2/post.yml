@@ -1,0 +1,80 @@
+---
+paths:
+  "/api/v2/posts":
+    post:
+      tags:
+      - api/v2/post
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v2/post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Post"
+      deprecated: false
+  "/api/v2/posts/new":
+    get:
+      tags:
+      - api/v2/post
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v2/post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Post"
+      deprecated: false
+  "/api/v2/posts/:id/edit":
+    get:
+      tags:
+      - api/v2/post
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v2/post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Post"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/api/v2/posts/:id":
+    delete:
+      tags:
+      - api/v2/post
+      summary: delete summary
+      description: delete description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: api/v2/post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Post"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer

@@ -1,0 +1,80 @@
+---
+paths:
+  "/users":
+    post:
+      tags:
+      - user
+      summary: post summary
+      description: post description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: user description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/User"
+      deprecated: false
+  "/users/new":
+    get:
+      tags:
+      - user
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: user description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/User"
+      deprecated: false
+  "/users/:id/edit":
+    get:
+      tags:
+      - user
+      summary: get summary
+      description: get description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: user description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/User"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/users/:id":
+    delete:
+      tags:
+      - user
+      summary: delete summary
+      description: delete description
+      responses:
+        default:
+          description: ''
+        '200':
+          description: user description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/User"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
