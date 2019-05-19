@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    tty: true
+    build: .
+    command: bundle exec rackup config.ru -p 4567 -o 0.0.0.0
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - my_network
+    environment:
+      GITHUB_CLIENT_ID: $GITHUB_CLIENT_ID
+      GITHUB_CLIENT_SECRET: $GITHUB_CLIENT_SECRET
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
+      - ./public:/var/www/html
+    ports:
+      - "8080:8080"
+    depends_on:
+      - web
+    networks:
+      - my_network
+networks:
+  my_network:
